@@ -1,27 +1,22 @@
-# SocialNetwork
+# EmployeeManagement
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
 
-## Development server
+## Utilities
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Bootstrap** version 5.2.3 for styling.
+- **Bootstrap Icons** version 1.10.3 for styling icons.
+- **JSON Server** version 0.17.0 for REST API and database.
 
-## Code scaffolding
+## Install Angular Project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Install **Angular CLI** `npm install -g @angular/cli@15.0.5` and **JSON Server** `npm install -g json-server@0.17.0` before clone repository.
+2. Clone repository project **social_network** `git clone https://github.com/anugerahdwi/social_network.git social_network`.
+3. Change directory `cd social_network` to root angular project directory.
+4. Run `npm install` to install all packages project.
 
-## Build
+## Run Angular Project
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Change directory `cd social_network` to root angular project directory.
+2. Run `npm run json-run` from angular project directory to run **JSON-Server**.
+3. Run `ng serve` from angular project directory to run **Angular Project**.
