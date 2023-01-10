@@ -1,0 +1,23 @@
+:host {
+    font-family: 'Inter', sans-serif;
+}
+
+#footer {
+    width: 100%;
+    padding: 1rem 0;
+    position: relative;
+    background-color: #011C39;
+}
+
+#footer span {
+    font-size: 0.8rem;
+    color: #F0F4F4;
+}
+
+.socmed-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #364A62;
+    font-size: 1rem;
+    color: #F0F4F4;
+}

@@ -1,0 +1,40 @@
+:host {
+    font-family: 'Inter', sans-serif;
+}
+
+#header_bottom {
+    margin-top: 3rem;
+}
+
+#header_top, 
+#header_bottom {
+    font-size: 0.9rem;
+}
+
+.navbar-toggler,
+.input-group input,
+.input-group button, 
+.navbar-nav button {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.input-group input {
+    margin-right: 1px;
+}
+
+.input-group input:focus {
+    border-color: #6C757D;
+}
+
+.account-box {
+    width: 2rem;
+    height: 2rem;
+    background-color: #364A62;
+    font-size: 1rem;
+    color: #F0F4F4;
+}
+
+.account p {
+    font-size: 0.8rem;
+}
