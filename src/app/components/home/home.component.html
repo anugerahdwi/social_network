@@ -15,8 +15,8 @@
                                     <div class="content my-2">
                                         <div class="content-big-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-7 text-start ps-2"><span class="fw-bold">How to improve your skills</span><br>Waseem Arshad</div>
-                                            <div class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>10498</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-7 text-start ps-2"><span class="fw-bold">{{ allVideo[0].title }}</span><br>{{ allVideo[0].name }}</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allVideo[0].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -24,8 +24,8 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-7 text-start ps-2">John Stainlor</div>
-                                            <div class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>6537</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-7 text-start ps-2">{{ allVideo[1].name }}</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allVideo[1].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -33,8 +33,8 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-7 text-start ps-2">John Doe</div>
-                                            <div class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>4523</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-7 text-start ps-2">{{ allVideo[2].name }}</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allVideo[2].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -46,8 +46,8 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-7 text-start ps-2">Michael Knligh</div>
-                                            <div class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>1984</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-7 text-start ps-2">{{ allVideo[3].name }}</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allVideo[3].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -55,8 +55,8 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-7 text-start ps-2">Ahmed Yasiin</div>
-                                            <div class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>1545</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-7 text-start ps-2">{{ allVideo[4].name }}</div>
+                                            <div *ngIf="allVideo && allVideo.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allVideo[4].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -83,8 +83,8 @@
                                     <div class="content my-2">
                                         <div class="content-big-box d-flex align-items-center justify-content-center"><i class="bi bi-people-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-7 text-start ps-2"><span class="fw-bold">Waseem Arshad</span><br>User interface designer</div>
-                                            <div class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>10498</div>
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-7 text-start ps-2"><span class="fw-bold">{{ allPeople[0].name }}</span><br>{{ allPeople[0].title }}</div>
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allPeople[0].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -92,7 +92,7 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-people-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-12 text-start ps-2">John Stainlor</div>
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-12 text-start ps-2">{{ allPeople[1].name }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -100,7 +100,7 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-people-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-12 text-start ps-2">John Doe</div>
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-12 text-start ps-2">{{ allPeople[2].name }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-people-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-12 text-start ps-2">Michael Knligh</div>
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-12 text-start ps-2">{{ allPeople[3].name }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +120,7 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-people-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-12 text-start ps-2">Ahmed Yasiin</div>
+                                            <div *ngIf="allPeople && allPeople.length > 0" class="col-12 text-start ps-2">{{ allPeople[4].name }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -147,8 +147,8 @@
                                     <div class="content my-2">
                                         <div class="content-big-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-7 text-start ps-2"><span class="fw-bold">Mobile ui & ux guide 2013</span><br>by William Makhoja</div>
-                                            <div class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>18375</div>
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-7 text-start ps-2"><span class="fw-bold">{{ allDocument[0].title }}</span><br>by {{ allDocument[0].name }}</div>
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-5 text-end fw-bold pe-2"><i class="bi bi-eye me-1"></i>{{ allDocument[0].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -156,7 +156,7 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-12 text-start ps-2"><span class="fw-bold">2013 Marketing trends</span><br><i class="bi bi-eye me-1"></i>16577</div>
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-12 text-start ps-2"><span class="fw-bold">{{ allDocument[1].title }}</span><br><i class="bi bi-eye me-1"></i>{{ allDocument[1].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -164,7 +164,7 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-12 text-start ps-2"><span class="fw-bold">2013 Marketing trends</span><br><i class="bi bi-eye me-1"></i>16577</div>
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-12 text-start ps-2"><span class="fw-bold">{{ allDocument[2].title }}</span><br><i class="bi bi-eye me-1"></i>{{ allDocument[2].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -176,7 +176,7 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-12 text-start ps-2"><span class="fw-bold">HTML 5 and usage</span><br><i class="bi bi-eye me-1"></i>13945</div>
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-12 text-start ps-2"><span class="fw-bold">{{ allDocument[3].title }}</span><br><i class="bi bi-eye me-1"></i>{{ allDocument[3].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -184,7 +184,7 @@
                                     <div class="content my-2">
                                         <div class="content-small-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
                                         <div class="content-title d-flex align-items-center justify-content-center">
-                                            <div class="col-12 text-start ps-2"><span class="fw-bold">How to become expert</span><br><i class="bi bi-eye me-1"></i>11489</div>
+                                            <div *ngIf="allDocument && allDocument.length > 0" class="col-12 text-start ps-2"><span class="fw-bold">{{ allDocument[4].title }}</span><br><i class="bi bi-eye me-1"></i>{{ allDocument[4].views }}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -208,63 +208,13 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-12 my-1">
+                        <div *ngFor="let data of allActivity" class="col-12 my-1">
                             <div class="activty d-flex align-items-center">
-                                <div class="activty-box d-flex align-items-center justify-content-center"><i class="bi bi-chat-fill"></i></div>
+                                <div class="activty-box d-flex align-items-center justify-content-center"><i class="bi bi-{{ data.type }}"></i></div>
                                 <div class="ms-2">
-                                    <p class="mb-0"><b class="me-1">John Stainlor</b><small>commented</small></p>
-                                    <p class="activty-desc mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                    <p class="text-muted mb-0"><small><i class="bi bi-chat-fill me-1"></i>2 minutes ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 my-1">
-                            <div class="activty d-flex align-items-center">
-                                <div class="activty-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
-                                <div class="ms-2">
-                                    <p class="mb-0"><b class="me-1">John Stainlor</b><small>uploaded a new video</small></p>
-                                    <p class="activty-desc mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                                    <p class="text-muted mb-0"><small><i class="bi bi-camera-video-fill me-1"></i>8 minutes ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 my-1">
-                            <div class="activty d-flex align-items-center">
-                                <div class="activty-box d-flex align-items-center justify-content-center"><i class="bi bi-file-earmark-fill"></i></div>
-                                <div class="ms-2">
-                                    <p class="mb-0"><b class="me-1">John Stainlor</b><small>shared a document</small></p>
-                                    <p class="activty-desc mb-0">"Lorem Ipsum is simply dummy text"</p>
-                                    <p class="text-muted mb-0"><small><i class="bi bi-file-earmark-fill me-1"></i>18 minutes ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 my-1">
-                            <div class="activty d-flex align-items-center">
-                                <div class="activty-box d-flex align-items-center justify-content-center"><i class="bi bi-unlock-fill"></i></div>
-                                <div class="ms-2">
-                                    <p class="mb-0"><b class="me-1">Arjun</b><small>unlocked new badge</small></p>
-                                    <p class="activty-desc mb-0">Lorem Ipsum</p>
-                                    <p class="text-muted mb-0"><small><i class="bi bi-unlock-fill me-1"></i>45 minutes ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 my-1">
-                            <div class="activty d-flex align-items-center">
-                                <div class="activty-box d-flex align-items-center justify-content-center"><i class="bi bi-camera-video-fill"></i></div>
-                                <div class="ms-2">
-                                    <p class="mb-0"><b class="me-1">Michael</b><small>uploaded a new video</small></p>
-                                    <p class="activty-desc mb-0">Lorem Ipsum is simply dummy text</p>
-                                    <p class="text-muted mb-0"><small><i class="bi bi-camera-video-fill me-1"></i>3 hour ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 my-1">
-                            <div class="activty d-flex align-items-center">
-                                <div class="activty-box d-flex align-items-center justify-content-center"><i class="bi bi-heart-fill"></i></div>
-                                <div class="ms-2">
-                                    <p class="mb-0"><b class="me-1">John Stainlor</b><small>liked a video</small></p>
-                                    <p class="activty-desc mb-0">Lorem Ipsum is simply</p>
-                                    <p class="text-muted mb-0"><small><i class="bi bi-heart-fill me-1"></i>1 day ago</small></p>
+                                    <p class="mb-0"><b class="me-1">{{ data.name }}</b><small>{{ data.action }}</small></p>
+                                    <p class="activty-desc mb-0">{{ data.description }}</p>
+                                    <p class="text-muted mb-0"><small><i class="bi bi-{{ data.type }} me-1"></i>{{ data.time }}</small></p>
                                 </div>
                             </div>
                         </div>
@@ -279,64 +229,10 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
+                        <div *ngFor="let data of allChannel" class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
                             <div class="channels">
                                 <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
-                                <div class="channels-title d-flex align-items-center justify-content-center">Google</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
-                            <div class="channels">
-                                <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
-                                <div class="channels-title d-flex align-items-center justify-content-center">Dribble</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
-                            <div class="channels">
-                                <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
-                                <div class="channels-title d-flex align-items-center justify-content-center">Microsoft</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
-                            <div class="channels">
-                                <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
-                                <div class="channels-title d-flex align-items-center justify-content-center">Behance</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
-                            <div class="channels">
-                                <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
-                                <div class="channels-title d-flex align-items-center justify-content-center">Weather Channel</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
-                            <div class="channels">
-                                <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
-                                <div class="channels-title d-flex align-items-center justify-content-center">Gurus</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
-                            <div class="channels">
-                                <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
-                                <div class="channels-title d-flex align-items-center justify-content-center">iMedia</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
-                            <div class="channels">
-                                <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
-                                <div class="channels-title d-flex align-items-center justify-content-center">Creativeye</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
-                            <div class="channels">
-                                <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
-                                <div class="channels-title d-flex align-items-center justify-content-center">Khan Studios</div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-6 col-xl-6 my-1">
-                            <div class="channels">
-                                <div class="channels-box d-flex align-items-center justify-content-center"><i class="bi bi-collection-play-fill"></i></div>
-                                <div class="channels-title d-flex align-items-center justify-content-center">Yahoo</div>
+                                <div class="channels-title d-flex align-items-center justify-content-center">{{ data.channel }}</div>
                             </div>
                         </div>
                     </div>
