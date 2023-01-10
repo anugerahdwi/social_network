@@ -1,19 +1,350 @@
 {
-  "posts": [
+  "menu": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "menu": "Videos",
+      "position": "header",
+      "target": ""
+    },
+    {
+      "id": 2,
+      "menu": "People",
+      "position": "header",
+      "target": ""
+    },
+    {
+      "id": 3,
+      "menu": "Documents",
+      "position": "header",
+      "target": ""
+    },
+    {
+      "id": 4,
+      "menu": "Events",
+      "position": "header",
+      "target": ""
+    },
+    {
+      "id": 5,
+      "menu": "Communities",
+      "position": "header",
+      "target": ""
+    },
+    {
+      "id": 6,
+      "menu": "Favorites",
+      "position": "header",
+      "target": ""
+    },
+    {
+      "id": 7,
+      "menu": "Channels",
+      "position": "header",
+      "target": ""
+    },
+    {
+      "id": 8,
+      "menu": "About",
+      "position": "footer",
+      "target": ""
+    },
+    {
+      "id": 9,
+      "menu": "For Business",
+      "position": "footer",
+      "target": ""
+    },
+    {
+      "id": 10,
+      "menu": "Suggestions",
+      "position": "footer",
+      "target": ""
+    },
+    {
+      "id": 11,
+      "menu": "Help & FAQs",
+      "position": "footer",
+      "target": ""
+    },
+    {
+      "id": 12,
+      "menu": "Contacts",
+      "position": "footer",
+      "target": ""
+    },
+    {
+      "id": 13,
+      "menu": "Pricing",
+      "position": "footer",
+      "target": ""
     }
   ],
-  "comments": [
+  "socmed": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "social_media": "Twitter",
+      "target": "",
+      "type": "twitter"
+    },
+    {
+      "id": 1,
+      "social_media": "Linkedin",
+      "target": "",
+      "type": "linkedin"
+    },
+    {
+      "id": 1,
+      "social_media": "Facebook",
+      "target": "",
+      "type": "facebook"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "video": [
+    {
+      "id": 1,
+      "name": "Waseem Arshad",
+      "title": "How to improve your skills",
+      "views": 10498
+    },
+    {
+      "id": 2,
+      "name": "John Stainlor",
+      "title": "Lorem Ipsum",
+      "views": 6537
+    },
+    {
+      "id": 3,
+      "name": "John Doe",
+      "title": "Lorem Ipsum",
+      "views": 4523
+    },
+    {
+      "id": 4,
+      "name": "Michael Knligh",
+      "title": "Lorem Ipsum",
+      "views": 1984
+    },
+    {
+      "id": 5,
+      "name": "Ahmed Yasiin",
+      "title": "Lorem Ipsum",
+      "views": 1545
+    },
+    {
+      "id": 6,
+      "name": "Arjun",
+      "title": "Lorem Ipsum",
+      "views": 1383
+    },
+    {
+      "id": 7,
+      "name": "John Doe",
+      "title": "Lorem Ipsum",
+      "views": 1152
+    }
+  ],
+  "people": [
+    {
+      "id": 1,
+      "name": "Waseem Arshad",
+      "title": "User interface designer",
+      "views": 10498
+    },
+    {
+      "id": 2,
+      "name": "John Stainlor",
+      "title": "Lorem Ipsum",
+      "views": 6537
+    },
+    {
+      "id": 3,
+      "name": "John Doe",
+      "title": "Lorem Ipsum",
+      "views": 4523
+    },
+    {
+      "id": 4,
+      "name": "Michael Knligh",
+      "title": "Lorem Ipsum",
+      "views": 1984
+    },
+    {
+      "id": 5,
+      "name": "Ahmed Yasiin",
+      "title": "Lorem Ipsum",
+      "views": 1545
+    },
+    {
+      "id": 6,
+      "name": "Arjun",
+      "title": "Lorem Ipsum",
+      "views": 1383
+    },
+    {
+      "id": 7,
+      "name": "John Doe",
+      "title": "Lorem Ipsum",
+      "views": 1152
+    }
+  ],
+  "document": [
+    {
+      "id": 1,
+      "name": "William Makhoja",
+      "title": "Mobile ui & ux guide 2013",
+      "views": 18375
+    },
+    {
+      "id": 2,
+      "name": "John Stainlor",
+      "title": "2013 Marketing trends",
+      "views": 16577
+    },
+    {
+      "id": 3,
+      "name": "John Doe",
+      "title": "2013 Marketing trends",
+      "views": 16577
+    },
+    {
+      "id": 4,
+      "name": "Michael Knligh",
+      "title": "HTML 5 and usage",
+      "views": 13945
+    },
+    {
+      "id": 5,
+      "name": "Ahmed Yasiin",
+      "title": "How to become expert",
+      "views": 11489
+    },
+    {
+      "id": 6,
+      "name": "Arjun",
+      "title": "Lorem Ipsum",
+      "views": 1383
+    },
+    {
+      "id": 7,
+      "name": "John Doe",
+      "title": "Lorem Ipsum",
+      "views": 1152
+    }
+  ],
+  "activity": [
+    {
+      "id": 1,
+      "name": "John Stainlor",
+      "action": "commented",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "time": "2 minutes ago",
+      "type": "chat-fill"
+    },
+    {
+      "id": 2,
+      "name": "John Stainlor",
+      "action": "uploaded a new video",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "time": "8 minutes ago",
+      "type": "camera-video-fill"
+    },
+    {
+      "id": 3,
+      "name": "John Stainlor",
+      "action": "shared a document",
+      "description": "'Lorem Ipsum is simply dummy text'",
+      "time": "18 minutes ago",
+      "type": "file-earmark-fill"
+    },
+    {
+      "id": 4,
+      "name": "Arjun",
+      "action": "unlocked new badge",
+      "description": "Lorem Ipsum",
+      "time": "45 minutes ago",
+      "type": "unlock-fill"
+    },
+    {
+      "id": 5,
+      "name": "Michael Knligh",
+      "action": "uploaded a new video",
+      "description": "Lorem Ipsum is simply dummy text",
+      "time": "3 hour ago",
+      "type": "camera-video-fill"
+    },
+    {
+      "id": 6,
+      "name": "John Stainlor",
+      "action": "liked a video",
+      "description": "Lorem Ipsum is simply",
+      "time": "1 day ago",
+      "type": "heart-fill"
+    },
+    {
+      "id": 7,
+      "name": "Michael Knligh",
+      "action": "liked a video",
+      "description": "Lorem Ipsum is simply",
+      "time": "1 day ago",
+      "type": "heart-fill"
+    },
+    {
+      "id": 8,
+      "name": "Arjun",
+      "action": "commented",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "time": "2 day ago",
+      "type": "chat-fill"
+    }
+  ],
+  "channel": [
+    {
+      "id": 1,
+      "channel": "Google"
+    },
+    {
+      "id": 2,
+      "channel": "Dribble"
+    },
+    {
+      "id": 3,
+      "channel": "Microsoft"
+    },
+    {
+      "id": 4,
+      "channel": "Behance"
+    },
+    {
+      "id": 5,
+      "channel": "Weather Channel"
+    },
+    {
+      "id": 6,
+      "channel": "Gurus"
+    },
+    {
+      "id": 7,
+      "channel": "iMedia"
+    },
+    {
+      "id": 8,
+      "channel": "Creativeye"
+    },
+    {
+      "id": 9,
+      "channel": "Khan Studios"
+    },
+    {
+      "id": 10,
+      "channel": "Yahoo"
+    },
+    {
+      "id": 11,
+      "channel": "Reddit"
+    },
+    {
+      "id": 12,
+      "channel": "CNN"
+    }
+  ]
 }
